@@ -1,21 +1,36 @@
 describe("value testing", () => {
   test("strings are string", () => {
-    expect(/* a matching string*/).toBe("Hello World");
-    expect(stringCheck(/*a word */)).toBeTruthy();
-    expect(stringCheck(/*a sentence*/)).toBeTruthy();
-    expect(stringCheck(/*not a string*/)).toBeFalsy();
+    let hello: string = "Hello World";
+    let word: string = "test";
+    let sentence: string = "Coding is more fun than manual testing.";
+    let notAString: number = 1010101010101010;
+
+    expect(hello).toBe("Hello World");
+    expect(stringCheck(word)).toBeTruthy();
+    expect(stringCheck(sentence)).toBeTruthy();
+    expect(stringCheck(notAString)).toBeFalsy();
   });
   test("numbers are numbers", () => {
-    expect(/* a matching number*/).toBe(3.14159);
-    expect(numberCheck(/*a decimal number*/)).toBeTruthy();
-    expect(numberCheck(/*an equation*/)).toBeTruthy();
-    expect(numberCheck(/*not a number*/)).toBeFalsy();
+    let pi: number = 3.14159;
+    let decimal: number = -555.333;
+    let equationResults: number = (3 * 5) / 13 + 1;
+    let notANumber: string = "12";
+
+    expect(pi).toBe(3.14159);
+    expect(numberCheck(decimal)).toBeTruthy();
+    expect(numberCheck(equationResults)).toBeTruthy();
+    expect(numberCheck(notANumber)).toBeFalsy();
   });
   test("booleans are booleans", () => {
-    expect(/* a matching boolean*/).toBe(false);
-    expect(booleanCheck(/*a "true" boolean*/)).toBeTruthy();
-    expect(booleanCheck(/*a "false" boolean*/)).toBeTruthy();
-    expect(booleanCheck(/*not a boolean*/)).toBeFalsy();
+    let isFalse: boolean = false;
+    let isTrue: boolean = true;
+    let falseFromComparison: boolean = 2 > 12;
+    let notABoolean: number = 5;
+
+    expect(isFalse).toBe(false);
+    expect(booleanCheck(isTrue)).toBeTruthy();
+    expect(booleanCheck(falseFromComparison)).toBeTruthy();
+    expect(booleanCheck(notABoolean)).toBeFalsy();
   });
 });
 
