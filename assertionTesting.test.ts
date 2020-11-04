@@ -4,11 +4,11 @@ describe("testing assertions", () => {
     const greaterOrEqual: number = 5;
     const bigger: number = 321654987;
 
-    // add an assertion that "smaller" is less than "bigger"
+    // Add an assertion that "smaller" is less than "bigger"
 
-    // add another assertion that "greaterOrEqual" is greater than or equal to "smaller"
+    // Add another assertion that "greaterOrEqual" is greater than or equal to "smaller"
 
-    //add a final assertion that "bigger" is *not* less than "smaller"
+    // Add a final assertion that "bigger" is *not* less than "smaller"
   });
   it("asserts on truth", () => {
     const hello: string = "Hello World";
