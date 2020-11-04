@@ -4,12 +4,12 @@ describe("testing assertions", () => {
     const greaterOrEqual: number = 5;
     const bigger: number = 321654987;
 
-    // add an assertion that "smaller" is less than "bigger"
+    // Add an assertion that "smaller" is less than "bigger"
     expect(smaller).toBeLessThan(bigger);
-    // add another assertion that "greaterOrEqual" is greater than or equal to "smaller"
+    // Add another assertion that "greaterOrEqual" is greater than or equal to "smaller"
     expect(smaller).toBeLessThanOrEqual(greaterOrEqual);
     expect(greaterOrEqual).toBeGreaterThanOrEqual(smaller);
-    //add a final assertion that "bigger" is *not* less than "smaller"
+    // Add a final assertion that "bigger" is *not* less than "smaller"
     expect(bigger).not.toBeLessThan(smaller);
   });
   it("asserts on truth", () => {
