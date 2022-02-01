@@ -28,3 +28,4 @@ function stringCheck(x) {
 function booleanCheck(x) {
   return typeof x == "boolean";
 }
+npm i
